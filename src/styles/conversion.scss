@@ -1,0 +1,14 @@
+
+/**
+make sure to import this function before using it
+*/
+@function tovw($num){
+    @return #{calc($num / 1440) * 100vw};
+}
+$deltaPos:0;
+:export {
+    deltaPos:$deltaPos;
+}
+@function tovwVar($num){
+    @return #{calc(( $deltaPos) / 1440) * 100vw};
+}
